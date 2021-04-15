@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  height: 500px;
+  background-image: url("img/background.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.game__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.toggle__btn {
+  margin: 10px 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 3px solid black;
+  font-size: 20px;
+  background-color: rgb(247, 229, 205);
+  transition: transform 200ms ease-in;
+}
+.toggle__btn:hover {
+  transform: scale(1.1);
+}
+.timer {
+  text-align: center;
+  width: 90px;
+  height: 40px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: 3px solid black;
+  margin: 5px 0;
+  font-size: 30px;
+  line-height: 30px;
+  user-select: none;
+  cursor: auto;
+}
+.score {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  background-color: teal;
+  color: whitesmoke;
+  border-radius: 50%;
+  border: 3px solid black;
+  margin: 5px 0;
+  font-size: 30px;
+  line-height: 30px;
+  user-select: none;
+  cursor: auto;
+}
+.game__field {
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+  position: relative;
+}
+
+.pop-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.486);
+  border-radius: 10px;
+  width: 400px;
+  height: 150px;
+  text-align: center;
+  transform: translateY(-300px);
+}
+.pop-up--hide {
+  display: none;
+}
+.pop-up__btn {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.pop-up__message {
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+}
+
+.carrot:hover,
+.bug:hover {
+  transform: scale(1.1);
+  transition: transform 200ms ease-in;
+}
