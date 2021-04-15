@@ -1,8 +1,8 @@
 "use strict";
-const CARROT_COUNT = 5;
-const BUG_COUNT = 5;
+const CARROT_COUNT = 10;
+const BUG_COUNT = 10;
 const CARROT_SIZE = 80;
-const GAME_DURATION_SEC = 5;
+const GAME_DURATION_SEC = 10;
 
 const field = document.querySelector(".game__field");
 const fieldRect = field.getBoundingClientRect();
@@ -114,7 +114,7 @@ function initGame() {
   score = 0;
   field.innerHTML = "";
   gameScore.innerText = CARROT_COUNT;
-  addItem("carrot", CARROT_COUNT, "img/carrot.png");
+  addItem("carrot", CARROT_COUNT, "img/carrot.jpg");
   addItem("bug", BUG_COUNT, "img/bug.png");
 }
 
@@ -130,7 +130,7 @@ function onFieldClick(e) {
     target.remove();
     score++;
     updateScoreBoard();
-    if (score === 5) {
+    if (score === 10) {
       finishGame(true);
     }
   } else if (target.matches(".bug")) {
