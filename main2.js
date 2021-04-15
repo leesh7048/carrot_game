@@ -114,8 +114,8 @@ function initGame() {
   score = 0;
   field.innerHTML = "";
   gameScore.innerText = CARROT_COUNT;
-  addItem("carrot", CARROT_COUNT, "img/carrot.jpg");
-  addItem("bug", BUG_COUNT, "img/bug.jpg");
+  addItem("carrot", CARROT_COUNT, "img/carrot.png");
+  addItem("bug", BUG_COUNT, "img/bug.png");
 }
 
 field.addEventListener("click", onFieldClick);
