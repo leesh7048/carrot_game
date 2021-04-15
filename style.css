@@ -106,6 +106,9 @@ body {
   width: 70px;
   height: 70px;
 }
+img {
+  border-radius: 50%;
+}
 
 .carrot:hover,
 .bug:hover {

@@ -1,8 +1,8 @@
 "use strict";
-const CARROT_COUNT = 10;
-const BUG_COUNT = 10;
+const CARROT_COUNT = 7;
+const BUG_COUNT = 7;
 const CARROT_SIZE = 80;
-const GAME_DURATION_SEC = 10;
+const GAME_DURATION_SEC = 7;
 
 const field = document.querySelector(".game__field");
 const fieldRect = field.getBoundingClientRect();
@@ -85,6 +85,7 @@ function finishGame(win) {
   started = false;
   stopSound(bgSound);
   stopGameTimer();
+  hideGameButton();
   if (win) {
     playSound(winSound);
   } else {
@@ -130,7 +131,7 @@ function onFieldClick(e) {
     target.remove();
     score++;
     updateScoreBoard();
-    if (score === 10) {
+    if (score === 7) {
       finishGame(true);
     }
   } else if (target.matches(".bug")) {
