@@ -17,7 +17,7 @@ body {
   align-items: center;
   width: 800px;
   height: 500px;
-  background-image: url("img/background.png");
+  background-image: url("img/background.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 20px;
@@ -111,6 +111,7 @@ body {
 @media screen and (max-width: 500px) {
   .game {
     width: 100%;
+    background-size: cover;
   }
   .pop-up {
     width: 200px;
