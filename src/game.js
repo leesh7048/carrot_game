@@ -40,7 +40,7 @@ class Game {
 
     this.gameBtn.addEventListener("click", () => {
       if (this.started) {
-        this.stop();
+        this.stop(Reason.cancel);
       } else {
         this.start();
       }
